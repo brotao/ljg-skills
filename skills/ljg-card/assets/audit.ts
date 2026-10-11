@@ -61,7 +61,7 @@ for (const term of [
   "白底黑字",
   "#FFFFFF",
   "#171717",
-  "不小于 32px",
+  "不小于 40px",
   "行高保持 1.9",
   "有效宽度约 896px",
 ]) {
@@ -100,7 +100,6 @@ for (const term of [
   "非专属视觉属性",
   "无论参照对象身份",
   "不写创作者姓名",
-  ".evidence-boundary",
   ".closing-judgment",
 ]) {
   requireThat(longMode.includes(term), `long-mode contract missing: ${term}`);
@@ -157,7 +156,6 @@ for (const primitive of [
   ".whiteboard-header",
   ".whiteboard-title",
   ".whiteboard-question",
-  ".whiteboard-boundary",
   ".reasoning-spine",
   ".spine-rail",
   ".logic-step",
@@ -239,7 +237,6 @@ for (const contract of [
   "dataset.visibility",
   "relation-arrowhead",
   "transition-sentence",
-  "whiteboard-boundary",
   "Ledger/DOM step mismatch",
   "Relation endpoint not found",
   "must keep bridge empty",
@@ -276,7 +273,7 @@ for (const term of [
   "白底黑字",
   "#FFFFFF",
   "#171717",
-  "32px",
+  "40px",
   "1.9",
   "15:1",
   "暗朱红",
@@ -323,7 +320,6 @@ for (const primitive of [
   ".beat-index",
   ".metric-row",
   ".metric",
-  ".evidence-boundary",
   ".closing-judgment",
 ]) {
   requireThat(longTemplate.includes(primitive), `long CSS surface missing: ${primitive}`);
@@ -358,10 +354,10 @@ for (const token of ["#FFFFFF", "#F6F6F4", "#171717", "#525252", "#7A7A7A", "#E5
   requireThat(fullTemplate.includes(token), `full taste token missing: ${token}`);
 }
 for (const contract of [
-  "font: 400 32px/1.9 var(--body);",
+  "font: 400 40px/1.9 var(--body);",
   "padding: 88px 92px 56px;",
-  "font: 400 32px/1.86 var(--body);",
-  "font: 400 25px/1.74 var(--body);",
+  "font-size: 40px;",
+  "font: 400 32px/1.75 var(--body);",
 ]) {
   requireThat(fullTemplate.includes(contract), `full readability CSS missing: ${contract}`);
 }
@@ -396,7 +392,6 @@ for (const primitive of [
   'class="beat-index"',
   'class="metric-row"',
   'class="metric"',
-  'class="evidence-boundary"',
   'class="closing-judgment"',
 ]) {
   requireThat(fixtureBuilder.includes(primitive), `long fixture does not exercise: ${primitive}`);
